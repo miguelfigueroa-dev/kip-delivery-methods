@@ -30,6 +30,12 @@
         outline: 0;
         box-shadow: none !important;
     }
+
+    .form-check .form-check-input {
+        float: none !important;
+        margin-left: 0em !important;
+        margin-top: 1px;
+    }
 </style>
 
 <!-- CSS only -->
@@ -51,7 +57,31 @@
             </h2>
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                 <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body d-flex">
+                            <div class="col-1">
+                                <p><span class="fs-6">Activado</span> <span class="text-muted">[website]</span></p>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-5">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Usar valor del sistema
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -80,6 +110,7 @@
             </div>
         </div>
     </div>
+
 </div>
 </div>
 </div>
