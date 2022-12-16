@@ -12,7 +12,7 @@
 function delivery_methods_custom_menu()
 {
 
-    add_menu_page('Métodos de envío', 'Métodos de envío', 'read', 'metodos_envio.php', '', 'dashicons-cart
+    add_menu_page('Métodos de envío', 'Métodos de envío', 'read', 'metodos_envio.php', '', 'dashicons-editor-expand
     ', 101);
     add_submenu_page('metodos_envio.php', 'Métodos de envío', 'Métodos de envío', 'read', ABSPATH . 
     'wp-content\plugins\kip-delivery-methods\views\admin.php', '');

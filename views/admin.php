@@ -57,13 +57,7 @@
         min-width: 100%;
     }
 </style>
-
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+  
 <div style="padding: 50px; margin-top: -20px;">
 
     <div class="sticky">
@@ -79,301 +73,13 @@
         </div>
     </div>
 
-    <div class="accordion" id="accordionPanelsStayOpenExample">
-
-        <!-- Tarifa plana -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                    Tarifa Plana
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                <div class="accordion-body">
-
-                    <div class="d-flex">
-                        <div class="col-2">
-                            <p><span class="fs-6">Activado <br></span>
-                                <span class="text-muted">[website]</span>
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                                <option selected>No</option>
-                                <option value="1">Si</option>
-                                <option value="2">No</option>
-                            </select>
-                        </div>
-                        <div class="col-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Usar valor del sistema
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="col-2">
-                            <p><span class="fs-6">Título <br></span>
-                                <span class="text-muted">[store view]</span>
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Flat Rate" aria-label="Tarifa plana" aria-describedby="basic-addon1" disabled>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Usar valor del sistema
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="col-2">
-                            <p><span class="fs-6">Nombre del método <br></span>
-                                <span class="text-muted">[store view]</span>
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Fixed" aria-label="Tarifa plana" aria-describedby="basic-addon1" disabled>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Usar valor del sistema
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="col-2">
-                            <p><span class="fs-6">Escribe <br></span>
-                                <span class="text-muted">[website]</span>
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" disabled>
-                                <option selected>Por articulo</option>
-                                <option value="1">Si</option>
-                                <option value="2">No</option>
-                            </select>
-                        </div>
-                        <div class="col-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Usar valor del sistema
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="col-2">
-                            <p><span class="fs-6">Precio <br></span>
-                                <span class="text-muted">[website]</span>
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="" aria-label="Tarifa plana" aria-describedby="basic-addon1">
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Usar valor del sistema
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="col-2">
-                            <p><span class="fs-6">Mensaje de error mostrado <br></span>
-                                <span class="text-muted">[store view]</span>
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <div class="input-group input-group-lg mb-3">
-                                <textarea class="form-control" placeholder="Tarifa plana" aria-label="With textarea" disabled>This shipping method is not available. To use this shipping method, please contact us.</textarea>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Usar valor del sistema
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="col-2">
-                            <p><span class="fs-6">Enviar a países aplicables <br></span>
-                                <span class="text-muted">[website]</span>
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" disabled>
-                                <option selected>Todos los paises permitidos</option>
-                                <option value="1">Paises especificos</option>
-                            </select>
-                        </div>
-                        <div class="col-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Usar valor del sistema
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="col-2">
-                            <p><span class="fs-6">Enviar a países específicos <br></span>
-                                <span class="text-muted">[website]</span>
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <div class="input-group mb-3">
-                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" disabled>
-                                    <option selected>Afganistán</option>
-                                    <option value="1">Islas Aland</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <!-- <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Usar valor del sistema
-                                    </label>
-                                </div> -->
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="col-2">
-                            <p><span class="fs-6">Mostrar método si no corresponde <br></span>
-                                <span class="text-muted">[website]</span>
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <div class="input-group mb-3">
-                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                                    <option selected>No</option>
-                                    <option value="1">Si</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Usar valor del sistema
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="col-2">
-                            <p><span class="fs-6">Orden de clasificación <br></span>
-                                <span class="text-muted">[website]</span>
-                            </p>
-                        </div>
-                        <div class="col-6">
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="" aria-label="Tarifa plana" aria-describedby="basic-addon1">
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Usar valor del sistema
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Kipping -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="kipping">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKipping" aria-expanded="true" aria-controls="collapseKipping">
-                    Kipping
-                </button>
-            </h2>
-            <div id="collapseKipping" class="accordion-collapse collapse" aria-labelledby="kipping">
-                <div class="accordion-body">
-
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="top-div">
-                                <p class="fs-6">Activado</p>
-                                <p class="text-muted text-website">[website]</p>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <select class="form-select form-select-lg mb-12 selectKipping" aria-label=".form-select-lg example" style="min-width: 100%;">
-                                <option selected>Seleccionar</option>
-                                <option value="1">Si</option>
-                                <option value="2">No</option>
-                            </select>
-                        </div>
-                        <div class="col-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkDefaultKipping">
-                                <label class="form-check-label" for="checkDefaultKipping">
-                                    Usar valor del sistema
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="top-div">
-                                <p class="text-right">Titulo</p>
-                                <p class="text-muted text-website">[website]</p>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <input type="text" style="width: 100%;">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="top-div">
-                                <p class="fs-6">Nombre del método</p>
-                                <p class="text-muted text-website">[website]</p>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <input type="text" style="width: 100%;">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+    <div class="accordion" id="accordionMetodosDeEnvio">
 
         <!-- Kipping: Programado -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                    Kipping: Programado: Programado
+                    Kipping: Programado
                 </button>
             </h2>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
@@ -837,7 +543,6 @@
                         </div>
                         <div class="col-6">
                             <select class="form-select form-select-lg mb-12 selectKippingProgramadoMismoDia" aria-label=".form-select-lg example" style="min-width: 100%;">
-                                <option selected>Seleccionar</option>
                                 <option value="1">Si</option>
                                 <option value="2">No</option>
                             </select>
@@ -872,10 +577,7 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="form-floating">
-                                <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
-                                <label for="floatingTextarea2">Añada la configuración</label>
-                            </div>
+                            <textarea class="form-control" id="" rows="3"></textarea>
                         </div>
                     </div>
                     <br>
@@ -1355,7 +1057,6 @@
                         </div>
                         <div class="col-6">
                             <select class="form-select form-select-lg mb-12 selectKippingProgramadoMismoDia" aria-label=".form-select-lg example" style="min-width: 100%;">
-                                <option selected>Seleccionar</option>
                                 <option value="1">Si</option>
                                 <option value="2">No</option>
                             </select>
@@ -1427,10 +1128,7 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="form-floating">
-                                <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
-                                <label for="floatingTextarea2">Añada la configuración</label>
-                            </div>
+                            <textarea class="form-control" id="" rows="3"></textarea>
                         </div>
                     </div>
                     <br>
@@ -1683,131 +1381,6 @@
             </div>
         </div>
 
-        <!-- Kipping: Programado festividad -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="Kipping_Programado_Festividad">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKipping_Programado_Festividad" aria-expanded="false" aria-controls="collapseKipping_Programado_Festividad">
-                    Kipping: Programado festividad
-                </button>
-            </h2>
-            <div id="collapseKipping_Programado_Festividad" class="accordion-collapse collapse " aria-labelledby="Kipping_Programado_Festividad">
-                <div class="accordion-body">
-                    ||
-                </div>
-            </div>
-        </div>
-
-        <!-- Click and collect -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsFive" aria-expanded="false" aria-controls="collapseFive">
-                    Click And Collect
-                </button>
-            </h2>
-            <div id="collapsFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
-                <div class="accordion-body">
-                    ll
-                </div>
-            </div>
-        </div>
-
-        <!-- Free Shipping -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="freeShipping">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefreeShipping" aria-expanded="false" aria-controls="collapsefreeShipping">
-                    Free Shipping
-                </button>
-            </h2>
-            <div id="collapsefreeShipping" class="accordion-collapse collapse " aria-labelledby="freeShipping">
-                <div class="accordion-body d-flex">
-                    ||
-                </div>
-            </div>
-        </div>
-
-        <!-- Table rates -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSix">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsSix" aria-expanded="false" aria-controls="collapseSix">
-                    Table Rates
-                </button>
-            </h2>
-            <div id="collapsSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
-                <div class="accordion-body">
-                    ll
-                </div>
-            </div>
-        </div>
-
-        <!-- In-Store delivery -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="In_Store_Delivery">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIn_Store_Delivery" aria-expanded="false" aria-controls="collapseIn_Store_Delivery">
-                    In-Store delivery
-                </button>
-            </h2>
-            <div id="collapseIn_Store_Delivery" class="accordion-collapse collapse " aria-labelledby="In_Store_Delivery">
-                <div class="accordion-body d-flex">
-                    ||
-                </div>
-            </div>
-        </div>
-
-        <!-- UPS -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSeven">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    UPS
-                </button>
-            </h2>
-            <div id="collapsSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven">
-                <div class="accordion-body">
-                    ll
-                </div>
-            </div>
-        </div>
-
-        <!-- USPS -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="USPS">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUSPS" aria-expanded="false" aria-controls="collapseUSPS">
-                    USPS
-                </button>
-            </h2>
-            <div id="collapseUSPS" class="accordion-collapse collapse " aria-labelledby="USPS">
-                <div class="accordion-body d-flex">
-                    ||
-                </div>
-            </div>
-        </div>
-
-        <!-- FedEx -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingEight">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsEight" aria-expanded="false" aria-controls="collapseEight">
-                    FedEx
-                </button>
-            </h2>
-            <div id="collapsEight" class="accordion-collapse collapse" aria-labelledby="headingEight">
-                <div class="accordion-body">
-                    ll
-                </div>
-            </div>
-        </div>
-
-        <!-- DHL -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="DHL">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDHL" aria-expanded="false" aria-controls="collapseDHL">
-                    DHL
-                </button>
-            </h2>
-            <div id="collapseDHL" class="accordion-collapse collapse " aria-labelledby="DHL">
-                <div class="accordion-body d-flex">
-                    ||
-                </div>
-            </div>
-        </div>
     </div>
 
 </div>
