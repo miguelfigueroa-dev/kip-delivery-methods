@@ -3,6 +3,7 @@
 ?>
 
 <style>
+    /* Clases reescritas de bootstrap */
     .alignleft {
         float: left;
         display: none;
@@ -37,8 +38,20 @@
         margin-top: 1px;
     }
 
+    .accordion-arrow::after {
+        display: none;
+        content: "▲";
+        float: right;
+    }
+
+    .collapse.show+.accordion-arrow::after {
+        display: inline;
+        content: "▼";
+    }
+
     /* ----------------------------------------------- */
 
+    /* Clases creadas */
     .text-website {
         margin-top: -16px;
     }
@@ -57,7 +70,11 @@
         min-width: 100%;
     }
 </style>
-  
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
 <div style="padding: 50px; margin-top: -20px;">
 
     <div class="sticky">
@@ -77,12 +94,12 @@
 
         <!-- Kipping: Programado -->
         <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            <h2 class="accordion-header" id="Kiping_Programado">
+                <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapseKipping_Programado" aria-expanded="false" aria-controls="collapseKipping_Programado">
                     Kipping: Programado
                 </button>
             </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div id="collapseKipping_Programado" class="collapse" aria-labelledby="Kiping_Programado">
                 <div class="accordion-body">
                     <div class="d-flex">
                         <div class="col-2">
@@ -527,11 +544,11 @@
         <!-- Kipping: Programado - Mismo día -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="Kipping_Programado_Mismo_Dia">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKipping_Programado_Mismo_Dia" aria-expanded="false" aria-controls="collapseKipping_Programado_Mismo_Dia">
+                <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapseKipping_Programado_Mismo_Dia" aria-expanded="false" aria-controls="collapseKipping_Programado_Mismo_Dia">
                     Kipping: Programado - Mismo día
                 </button>
             </h2>
-            <div id="collapseKipping_Programado_Mismo_Dia" class="accordion-collapse collapse" aria-labelledby="Kipping_Programado_Mismo_Dia">
+            <div id="collapseKipping_Programado_Mismo_Dia" class="collapse" aria-labelledby="Kipping_Programado_Mismo_Dia">
                 <div class="accordion-body">
 
                     <div class="row">
@@ -943,11 +960,11 @@
         <!-- Kipping: Programado - Agregar -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     Kipping Programado - Agregar
                 </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
                 <div class="accordion-body">
                     <!---->
                     <div class="d-flex">
@@ -1041,11 +1058,11 @@
         <!-- Kipping: Express -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="kipping_Express">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsekipping_Express" aria-expanded="false" aria-controls="collapsekipping_Express">
+                <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapsekipping_Express" aria-expanded="false" aria-controls="collapsekipping_Express">
                     Kipping: Express
                 </button>
             </h2>
-            <div id="collapsekipping_Express" class="accordion-collapse collapse" aria-labelledby="kipping_Express">
+            <div id="collapsekipping_Express" class="collapse" aria-labelledby="kipping_Express">
                 <div class="accordion-body">
 
                     <div class="row">
@@ -1056,15 +1073,15 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <select class="form-select form-select-lg mb-12 selectKippingProgramadoMismoDia" aria-label=".form-select-lg example" style="min-width: 100%;">
+                            <select class="form-select form-select-lg mb-12 selectKippingExpress" aria-label=".form-select-lg example" style="min-width: 100%;">
                                 <option value="1">Si</option>
                                 <option value="2">No</option>
                             </select>
                         </div>
                         <div class="col-4">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkKippingProgramadoMismoDia">
-                                <label class="form-check-label" for="checkKippingProgramadoMismoDia">
+                                <input class="form-check-input" type="checkbox" value="" id="checkKippingExpress">
+                                <label class="form-check-label" for="checkKippingExpress">
                                     Usar valor del sistema
                                 </label>
                             </div>
@@ -1200,11 +1217,11 @@
         <!-- Kipping: Flash -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsFour" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapsFour" aria-expanded="false" aria-controls="collapseTwo">
                     Kipping: Flash
                 </button>
             </h2>
-            <div id="collapsFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+            <div id="collapsFour" class="collapse" aria-labelledby="headingFour">
                 <div class="accordion-body">
                     <div class="d-flex">
                         <div class="col-2">
@@ -1383,38 +1400,41 @@
 
     </div>
 
-</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-<script>
-    /*KIPING*/
-    let selectKipping = document.querySelectorAll('.selectKipping');
-    let checkDefaultKipping = document.getElementById('checkDefaultKipping');
 
-    document.addEventListener("DOMContentLoaded", () => {
-        selectKipping.forEach(elemento => elemento.disabled = false);
+    <script>
+        /*KIPPING PROGRAMADO MISMO DIA*/
+        let selectKippingProgramadoMismoDia = document.querySelectorAll('.selectKippingProgramadoMismoDia');
+        let checkKippingProgramadoMismoDia = document.getElementById('checkKippingProgramadoMismoDia');
 
-        checkDefaultKipping.addEventListener('click', () => {
-            if (checkDefaultKipping.checked) {
-                selectKipping.forEach(elemento => elemento.disabled = true);
-            } else {
-                selectKipping.forEach(elemento => elemento.disabled = false);
-            }
+        document.addEventListener("DOMContentLoaded", () => {
+            selectKippingProgramadoMismoDia.forEach(elemento => elemento.disabled = false);
+
+            checkKippingProgramadoMismoDia.addEventListener('click', () => {
+                if (checkKippingProgramadoMismoDia.checked) {
+                    selectKippingProgramadoMismoDia.forEach(elemento => elemento.disabled = true);
+                } else {
+                    selectKippingProgramadoMismoDia.forEach(elemento => elemento.disabled = false);
+                }
+            });
         });
-    });
 
-    /*KIPING PROGRAMADO MISMO DIA*/
-    let selectKippingProgramadoMismoDia = document.querySelectorAll('.selectKippingProgramadoMismoDia');
-    let checkKippingProgramadoMismoDia = document.getElementById('checkKippingProgramadoMismoDia');
+        /*KIPPING EXPRESS*/
+        let selectKipping = document.querySelectorAll('.selectKippingExpress');
+        let checkDefaultKipping = document.getElementById('checkKippingExpress');
 
-    document.addEventListener("DOMContentLoaded", () => {
-        selectKippingProgramadoMismoDia.forEach(elemento => elemento.disabled = false);
+        document.addEventListener("DOMContentLoaded", () => {
+            selectKipping.forEach(elemento => elemento.disabled = false);
 
-        checkKippingProgramadoMismoDia.addEventListener('click', () => {
-            if (checkKippingProgramadoMismoDia.checked) {
-                selectKippingProgramadoMismoDia.forEach(elemento => elemento.disabled = true);
-            } else {
-                selectKippingProgramadoMismoDia.forEach(elemento => elemento.disabled = false);
-            }
+            checkDefaultKipping.addEventListener('click', () => {
+                if (checkDefaultKipping.checked) {
+                    selectKipping.forEach(elemento => elemento.disabled = true);
+                } else {
+                    selectKipping.forEach(elemento => elemento.disabled = false);
+                }
+            });
         });
-    });
-</script>
+    </script>
